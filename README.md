@@ -3,6 +3,11 @@
 A Flask-based web application that allows students to securely upload, manage, search, download, and delete PDF notes.
 
 ---
+## 🌐 Live Demo
+
+**Website:** https://student-notes-management-ngzi.onrender.com/
+
+**GitHub Repository:** https://github.com/rohithkumarakula/student-notes-management
 
 ## ✨ Features
 
