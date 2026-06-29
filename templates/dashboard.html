@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2 class="mb-4">
+    👋 Welcome, {{ username }}
+</h2>
+
+<div class="row">
+
+    <div class="col-md-4">
+
+        <div class="card text-center shadow border-0">
+
+            <div class="card-body">
+
+                <h5 class="text-primary">
+                    📚 Total Notes
+                </h5>
+
+                <h1 class="display-4">
+                    {{ total_notes }}
+                </h1>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="col-md-4">
+
+        <div class="card text-center shadow border-0">
+
+            <div class="card-body">
+
+                <h5 class="text-success">
+                    📤 Upload Notes
+                </h5>
+
+                <a href="/upload" class="btn btn-success mt-3">
+                    Upload PDF
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="col-md-4">
+
+        <div class="card text-center shadow border-0">
+
+            <div class="card-body">
+
+                <h5 class="text-warning">
+                    📄 View Notes
+                </h5>
+
+                <a href="/notes" class="btn btn-warning mt-3">
+                    View Notes
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="card shadow mt-5">
+
+    <div class="card-body">
+
+        <h4>📌 About This Project</h4>
+
+        <p>
+            This Student Notes Management System allows students to securely upload,
+            search, download, and manage PDF notes. Every user's notes are protected
+            using authentication and session management.
+        </p>
+
+    </div>
+
+</div>
+
+{% endblock %}

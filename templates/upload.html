@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>Upload Notes</h2>
+
+<form action="/upload" method="POST" enctype="multipart/form-data">
+
+    <div class="mb-3">
+        <label>Title</label>
+        <input
+            type="text"
+            name="title"
+            class="form-control"
+            placeholder="Enter Note Title"
+            required>
+    </div>
+
+    <div class="mb-3">
+        <label>Subject</label>
+        <input
+            type="text"
+            name="subject"
+            class="form-control"
+            placeholder="Enter Subject"
+            required>
+    </div>
+
+    <div class="mb-3">
+        <label>Select PDF</label>
+        <input
+            type="file"
+            name="file"
+            class="form-control"
+            accept=".pdf"
+            required>
+    </div>
+
+    <button class="btn btn-primary">
+        Upload
+    </button>
+
+</form>
+
+{% endblock %}
